@@ -8,7 +8,7 @@ export default function Home() {
         <title>Carlos Henrique Dev</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <h1>Olá, Mundo</h1>
+      <h1 style={{color: "#fff"}}>Olá, Mundo</h1>
 
     </div>
   )
