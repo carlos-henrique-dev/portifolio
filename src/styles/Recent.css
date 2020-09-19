@@ -15,3 +15,9 @@
   color: #c0c0c0;
   font-size: 50px;
 }
+
+@media (max-width: 480px) {
+  .alert {
+    font-size: 30px;
+  }
+}

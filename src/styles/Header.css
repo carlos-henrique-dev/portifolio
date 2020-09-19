@@ -1,4 +1,3 @@
-
 .header {
   display: flex;
   justify-content: flex-end;
@@ -35,4 +34,10 @@
 .navlinks li a:hover {
   color: #e5cf04;
   transform: scale(1.5);
+}
+
+@media (max-width: 480px) {
+  .navlinks li a {
+    font-size: 14px;
+  }
 }
