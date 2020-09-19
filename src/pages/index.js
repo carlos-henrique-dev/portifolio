@@ -1,15 +1,30 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
+import Header from "../components/Header";
+import Presentation from "../components/Presentation";
+import Recent from "../components/Recent";
+import styles from "../styles/Home.module.css";
 
-export default function Home() {
+const Index = () => {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>Carlos Henrique Dev</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <h1 style={{color: "#fff"}}>Olá, Mundo</h1>
+      <div className={styles.container}>
+        <Header />
+        <div className="content">
+          <div id="home">
+            <Presentation />
+          </div>
 
+          <div id="projects">
+            <Recent title="Ola mundo" />
+          </div>
+        </div>
+      </div>
     </div>
-  )
-}
+  );
+};
+
+export default Index;

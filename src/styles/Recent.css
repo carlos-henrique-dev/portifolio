@@ -1,0 +1,17 @@
+.recente_container {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 250px;
+}
+
+.workinprogress {
+  margin: 50px;
+  width: 60%;
+}
+
+.alert {
+  color: #c0c0c0;
+  font-size: 50px;
+}

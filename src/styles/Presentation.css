@@ -1,0 +1,44 @@
+.presentation_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.greetings {
+  margin: 50px;
+  margin-bottom: 0;
+  padding-right: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.greetings h1 {
+  color: #e5cf04;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.greetings h2 {
+  font-size: 30px;
+  font-weight: normal;
+  color: #c0c0c0;
+}
+
+.greetings img {
+  width: 200px;
+  height: 350px;
+  opacity: 80%;
+}
+
+.description {
+  color: #c0c0c0;
+  font-size: 20px;
+  width: auto;
+  max-width: 60%;
+  font-weight: lighter;
+  text-align: justify;
+  padding: 30px 10%;
+  padding-top: 0;
+  margin-left: auto;
+  margin-right: 0;
+}
