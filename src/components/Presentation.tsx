@@ -17,7 +17,7 @@ const Presentation = () => {
           React, Next.js, GraphQl, entre outras.
         </p>
         <p>Também tenho experiência com tecnologias back end como NodeJS, PostgreSQL, GraphQL Server e Express</p>
-        <p>Atualmente trabalho projetos freelancer.</p>
+        <p>Atualmente trabalho em projetos freelancer.</p>
         <p>Abaixo você pode conferir meus projetos mais recentes.</p>
       </div>
     </div>
