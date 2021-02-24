@@ -13,7 +13,7 @@ const Index = () => {
       </div>
 
       <div id="projects">
-        <RecentProjects title="Ola mundo" />
+        <RecentProjects />
       </div>
 
       <div className="cv-button">
