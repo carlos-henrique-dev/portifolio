@@ -1,0 +1,104 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 50px 0;
+  width: 100%;
+  overflow: hidden;
+
+  .brand {
+    text-decoration: none;
+    font-weight: 700;
+    display: flex;
+    color: #023e8a;
+
+    .title {
+      font-size: 3rem;
+    }
+    .tick {
+      margin-top: 10px;
+      font-size: 3rem;
+      -webkit-animation: 1s blink step-end infinite;
+      -moz-animation: 1s blink step-end infinite;
+      -ms-animation: 1s blink step-end infinite;
+      -o-animation: 1s blink step-end infinite;
+      animation: 1s blink step-end infinite;
+    }
+  }
+
+  nav {
+    list-style: none;
+
+    li {
+      display: inline-block;
+      a {
+        display: block;
+        padding: 0px 20px;
+        font-weight: 900;
+        color: #c0c0c0;
+        font-size: 1.5rem;
+        font-weight: normal;
+        text-decoration: none;
+        transition: transform 0.2s;
+      }
+
+      a:hover {
+        color: #023e8a;
+        -ms-transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+
+// daqui pra baixo cuida do tick que fica piscando
+@keyframes blink {
+  from,
+  to {
+    color: transparent;
+  }
+  50% {
+    color: #023e8a;
+  }
+}
+
+@-moz-keyframes blink {
+  from,
+  to {
+    color: transparent;
+  }
+  50% {
+    color: #023e8a;
+  }
+}
+
+@-webkit-keyframes blink {
+  from,
+  to {
+    color: transparent;
+  }
+  50% {
+    color: #023e8a;
+  }
+}
+
+@-ms-keyframes blink {
+  from,
+  to {
+    color: transparent;
+  }
+  50% {
+    color: #023e8a;
+  }
+}
+
+@-o-keyframes blink {
+  from,
+  to {
+    color: transparent;
+  }
+  50% {
+    color: #023e8a;
+  }
+}
