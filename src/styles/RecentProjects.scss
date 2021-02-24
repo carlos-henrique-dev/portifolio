@@ -1,23 +1,45 @@
-.recente_container {
+.recent-projects {
   flex-direction: column;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 250px;
-}
+  padding: 0 50px 0;
 
-.workinprogress {
-  margin: 50px;
-  width: 60%;
-}
+  hr {
+    width: 100%;
+    margin-bottom: 30px;
+    border: 0;
+    border-bottom: 0.3px solid rgba(0, 0, 0, 0.1);
+  }
 
-.alert {
-  color: #c0c0c0;
-  font-size: 50px;
-}
+  .title {
+    width: 100%;
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: #242121;
+      margin-bottom: 30px;
+      text-align: left;
+    }
+  }
 
-@media (max-width: 480px) {
-  .alert {
-    font-size: 30px;
+  .projects-list {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+    a {
+      img {
+        max-width: 100%;
+        max-height: 100%;
+        margin-bottom: 30px;
+        box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.3);
+        border-radius: 5px;
+      }
+      transition: transform 0.3s;
+    }
+
+    a:hover {
+      transform: scale(1.05);
+    }
   }
 }

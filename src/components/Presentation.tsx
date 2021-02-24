@@ -2,20 +2,24 @@ import React from "react";
 
 const Presentation = () => {
   return (
-    <div className="presentation_container">
+    <div className="presentation">
       <div className="greetings">
-        <div>
-          <h2>Olá,sou o Carlos Henrique</h2>
-          <h4>Desenvolvedor frontend</h4>
-        </div>
+        <h1>
+          Olá,
+          <br />
+          <span> sou o Carlos Henrique.</span>
+        </h1>
+        <h2>Desenvolvedor Web</h2>
       </div>
-      <div className="description">
+
+      <div className="history">
         <p>
-          I’m an Istanbul based Sr. front-end developer and designer, working with companies worldwide for over 10
-          years. I’m experienced in HTML5, JS and CSS3 and modern libraries React, Gatsby and Next.js. I’m also the
-          organizer of ReactJS Istanbul, a community for React developers in Istanbul. Currently working for full-time
-          as design lead & front-end dev on SwayPay, a startup from San Francisco.
+          Sou desenvolvedor web há 2 anos. Possuo experiência com HTML5, JS, CSS3 e bibliotecas e frameworks como React,
+          Next.js, GraphQl, entre outras.
         </p>
+        <p>Também tenho experiência com tecnoligas back end como NodeJS, PostgreSQL,, GraphQL Server e Express</p>
+        <p>Atualmente trabalho projetos freelancer.</p>
+        <p>Abaixo você pode conferir meus projetos mais recentes.</p>
       </div>
     </div>
   );

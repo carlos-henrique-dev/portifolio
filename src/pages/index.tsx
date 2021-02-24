@@ -15,6 +15,12 @@ const Index = () => {
       <div id="projects">
         <RecentProjects title="Ola mundo" />
       </div>
+
+      <div className="cv-button">
+        <a href="/curriculo_carlos_henrique.pdf" target="_blank">
+          Baixar currículo
+        </a>
+      </div>
     </BaseLayout>
   );
 };

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap");
 
 @import "./Header.scss";
 @import "./Presentation.scss";
@@ -12,5 +12,64 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
+}
+
+.cv-button {
+  width: 100%;
+  margin: 0 0 60px;
+  text-align: center;
+
+  a {
+    display: inline-block;
+    text-decoration: none;
+    color: #023e8a;
+    border: 1px solid #023e8a;
+    border-radius: 3px;
+    padding: 15px 25px;
+    width: 230px;
+    transition: color 0.7s, background-color 0.7s, transform 0.3s;
+  }
+  a:hover {
+    background-color: #023e8a;
+    color: #fff;
+    transform: scale(1.05);
+  }
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 50px;
+  height: 100px;
+  box-sizing: border-box;
+  max-width: 100%;
+  border-top: 1px solid rgba(62, 62, 225, 0.12);
+  margin: auto;
+
+  a {
+    text-decoration: none;
+    color: #023e8a;
+    font-weight: normal;
+    h1 {
+      font-size: 1.5rem;
+    }
+  }
+
+  .social-icons {
+    margin-left: auto;
+    .social-icon {
+      color: #aaaaaa;
+      width: 35px;
+      height: 35px;
+      margin-left: 15px;
+      transition: transform 0.3s;
+    }
+
+    .social-icon:hover {
+      color: #858484;
+      transform: scale(1.05);
+    }
+  }
 }

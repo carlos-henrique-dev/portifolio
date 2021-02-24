@@ -50,10 +50,21 @@ function BaseLayout({ children }) {
       {children}
 
       <footer>
-        <img src="/icone.png" width="150" />
-        <AiFillLinkedin />
-        <AiFillGithub />
-        <AiFillMail />
+        <h1>
+          <a href="#home">Carlos Henrique</a>
+        </h1>
+
+        <div className="social-icons">
+          <a href="https://www.linkedin.com/in/henriqueok20/" target="_blank">
+            <AiFillLinkedin className="social-icon" />
+          </a>
+          <a href="https://www.github.com/henriqueok20" target="_blank">
+            <AiFillGithub className="social-icon" />
+          </a>
+          <a href="">
+            <AiFillMail className="social-icon" />
+          </a>
+        </div>
       </footer>
     </div>
   );
