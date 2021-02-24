@@ -52,6 +52,33 @@
   }
 }
 
+@media (max-width: 900px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 15px 0;
+    width: 100%;
+    overflow: hidden;
+
+    .brand {
+      text-decoration: none;
+      font-weight: 700;
+      display: flex;
+      color: #023e8a;
+
+      .title {
+        font-size: 2rem;
+      }
+    }
+
+    nav {
+      // TODO mudar para menu
+      visibility: hidden;
+    }
+  }
+}
+
 // daqui pra baixo cuida do tick que fica piscando
 @keyframes blink {
   from,

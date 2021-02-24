@@ -1,6 +1,6 @@
 import React from "react";
 
-const Recent = (props) => {
+const Recent = () => {
   return (
     <div className="recent-projects" id="#recent-projects">
       <hr />

@@ -48,11 +48,11 @@ footer {
   border-top: 1px solid rgba(62, 62, 225, 0.12);
   margin: auto;
 
-  a {
-    text-decoration: none;
-    color: #023e8a;
-    font-weight: normal;
-    h1 {
+  h1 {
+    a {
+      text-decoration: none;
+      color: #023e8a;
+      font-weight: normal;
       font-size: 1.5rem;
     }
   }
@@ -70,6 +70,29 @@ footer {
     .social-icon:hover {
       color: #858484;
       transform: scale(1.05);
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  footer {
+    padding: 0 30px;
+
+    h1 {
+      width: 150px;
+      a {
+        font-size: 1rem;
+      }
+    }
+
+    .social-icons {
+      .social-icon {
+        color: #aaaaaa;
+        width: 35px;
+        height: 35px;
+        margin-left: 10px;
+        transition: transform 0.3s;
+      }
     }
   }
 }

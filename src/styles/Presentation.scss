@@ -13,12 +13,13 @@
       font-size: 35px;
       color: #242121;
       span {
-        font-size: 40px;
+        display: block;
+        font-size: 33px;
       }
     }
 
     h2 {
-      font-size: 30px;
+      font-size: 28px;
       font-weight: normal;
       color: rgb(92, 92, 92);
     }
@@ -32,6 +33,51 @@
       margin-bottom: 20px;
       font-size: 20px;
       color: rgb(92, 92, 92);
+    }
+  }
+}
+@media (max-width: 900px) {
+  .presentation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    margin: 65px auto 94px;
+    padding: 0 20px 0;
+
+    .greetings {
+      display: block;
+      width: 100%;
+
+      h1 {
+        font-size: 28px;
+        color: #242121;
+        span {
+          margin-left: 10px;
+          display: inline-block;
+          font-size: 35px;
+        }
+      }
+
+      h2 {
+        margin-top: 5px;
+        margin-left: 15px;
+        font-size: 22px;
+        font-weight: normal;
+        color: rgb(92, 92, 92);
+      }
+    }
+
+    .history {
+      margin-top: 30px;
+      width: 100%;
+
+      p {
+        margin-bottom: 20px;
+        font-size: 20px;
+        color: rgb(92, 92, 92);
+      }
     }
   }
 }
