@@ -61,7 +61,7 @@ function BaseLayout({ children }) {
           <a href="https://www.github.com/henriqueok20" target="_blank">
             <AiFillGithub className="social-icon" />
           </a>
-          <a href="">
+          <a href="/contact" target="_blank">
             <AiFillMail className="social-icon" />
           </a>
         </div>
