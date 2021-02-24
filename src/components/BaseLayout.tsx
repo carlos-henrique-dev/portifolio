@@ -4,7 +4,7 @@ import { AiFillLinkedin, AiFillGithub, AiFillMail } from "react-icons/ai";
 
 function BaseLayout({ children }) {
   return (
-    <div>
+    <div className="base-container">
       <Head>
         <title>Carlos Henrique DEV</title>
         <link rel="icon" href="/logo.png" />
