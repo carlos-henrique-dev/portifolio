@@ -10,7 +10,8 @@ const Recent = () => {
       </div>
 
       <div className="projects-list">
-        <a href="/projects/aca-project">
+        <a href="https://www.aca-amambai.com/">
+          {/* <a href="/projects/aca-project"> */}
           <img src="/projeto-aca.jpg" width="880" height="440" />
         </a>
       </div>
