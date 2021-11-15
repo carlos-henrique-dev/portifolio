@@ -66,9 +66,10 @@
 					.current-locale,
 					.locale-options {
 						img {
-							width: 25px;
-							height: 20px;
+							// width: 25px;
+							// height: 20px;
 							object-fit: cover;
+							border-radius: 20px;
 						}
 
 						span {
@@ -102,10 +103,16 @@
 							flex-direction: row;
 							cursor: pointer;
 							transition: all 0.2s ease-in-out;
-							padding: 5px 10px;
+							padding: 10px 10px 5px;
+
+							.flag-container {
+								position: relative;
+								width: 20px;
+							}
 
 							span {
 								width: 40px;
+								margin-left: 10px;
 							}
 
 							&:hover {

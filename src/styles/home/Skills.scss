@@ -15,12 +15,17 @@
 			padding: 10px 0 30px;
 
 			li {
+				cursor: pointer;
 				color: $secundary;
 				display: flex;
 				align-items: center;
 				margin: 10px;
 				span {
 					margin-left: 5px;
+				}
+
+				&:hover {
+				color: $primary;
 				}
 			}
 		}

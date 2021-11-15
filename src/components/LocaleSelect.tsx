@@ -44,17 +44,21 @@ const LocaleSelect = () => {
 	return (
 		<div className="locale-container">
 			<div className="current-locale" onClick={() => toggleLocaleOptions()}>
-				<Image src={getLocaleFlag()} alt="country flag" width="40" height="40" />
+				<Image src={getLocaleFlag()} alt="country flag" width="20" height="20" />
 				<span>{getLocaleName()}</span>
 			</div>
 
 			<div className={`locale-options ${showLocaleOptions ? 'visible' : ''}`} ref={ref}>
 				<div className="option" onClick={() => changeLocale('pt_br')}>
-					<Image src="/icons/flags/pt_br.svg" alt="country flag" width="40" height="40" />
+					<div className="flag-container">
+						<Image src="/icons/flags/pt_br.svg" alt="country flag" width="20" height="20" />
+					</div>
 					<span>{t('lang-pt-br')}</span>
 				</div>
 				<div className="option" onClick={() => changeLocale('en')}>
-					<Image src="/icons/flags/en.svg" alt="country flag" width="40" height="40" />
+					<div className="flag-container">
+						<Image src="/icons/flags/en.svg" alt="country flag" width="20" height="20" />
+					</div>
 					<span>{t('lang-en')}</span>
 				</div>
 			</div>

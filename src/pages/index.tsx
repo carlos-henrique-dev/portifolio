@@ -27,12 +27,12 @@ const HomePage = () => {
 
 	const handleSubmit = (e) => {
 		e.preventDefault()
-		
+
 		// TODO adicionar uma validação melhor no formulário
-		if(email === '' || name === '' || message === '') {
+		if (email === '' || name === '' || message === '') {
 			return
 		}
-		
+
 		setSubmitting(true)
 
 		let data = {
@@ -195,7 +195,9 @@ const HomePage = () => {
 			</section>
 
 			<section id="contact" className="contact">
+				<div className="contact-image-wrapper">
 				<Image src="/images/contact.svg" alt="Contact Me" width="800" height="800" />
+				</div>
 				<h3 className="home-section-title">{t('header:contact')}</h3>
 				<div className="form-wrapper">
 					{
