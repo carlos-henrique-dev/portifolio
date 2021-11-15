@@ -1,73 +1,61 @@
 import React from "react";
 import Head from "next/head";
-import { AiFillLinkedin, AiFillGithub, AiFillMail } from "react-icons/ai";
+import Header from "./Header";
+
+const defaultMetaInfo = {
+	description: 'Welcome to my portifólio.Here you can see my latest projects and get in touch with me',
+	websiteUrl: 'https://carloshenrique.dev/',
+	name: 'Carlos Henrique DEV',
+	logoUrl: 'https://drive.google.com/file/d/1oQw0KUtcfQDHnP70c7S7vu1hks1C_VPo/view?usp=sharing',
+	tags: 'Carlos, Henrique, Carlos Henrique, Carlos Henrique Programação, Carlos Henrique ReactJS, ReactJS, NextJS, Portifólio, Portifólio Carlos Henrique, Amambai, MS, Carlos Henrique Machado dos Santos Amambai MS'
+}
 
 function BaseLayout({ children }) {
-  return (
-    <div className="base-container">
-      <Head>
-        <title>Carlos Henrique DEV</title>
-        <link rel="icon" href="/logo.png" />
-        <meta name="title" content="Carlos Henrique DEV" />
-        <meta
-          name="description"
-          content="Welcome to my portifólio.Here you can see my latest projects and get in touch with me"
-        />
+	return (
+		<div className="base-container">
+			<Head>
+				<title>Carlos Henrique DEV</title>
+				<link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
+				<link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png" />
+				<link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png" />
+				<link rel="icon" href="/icons/favicon.ico" />
+				<link rel="manifest" href="/site.webmanifest" />
 
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://carloshenrique.dev/" />
-        <meta property="og:title" content="Carlos Henrique DEV" />
-        <meta
-          property="og:description"
-          content="Welcome to my portifólio.Here you can see my latest projects and get in touch with me"
-        />
-        <meta
-          property="og:image"
-          content="https://drive.google.com/file/d/1oQw0KUtcfQDHnP70c7S7vu1hks1C_VPo/view?usp=sharing"
-        />
+				<meta name="title" content={defaultMetaInfo.name} />
+				<meta name="description" content={defaultMetaInfo.description} />
 
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://carloshenrique.dev/" />
-        <meta property="twitter:title" content="Carlos Henrique DEV" />
-        <meta
-          property="twitter:description"
-          content="Welcome to my portifólio.Here you can see my latest projects and get in touch with me"
-        />
-        <meta
-          property="twitter:image"
-          content="https://drive.google.com/file/d/1oQw0KUtcfQDHnP70c7S7vu1hks1C_VPo/view?usp=sharing"
-        />
-        <meta
-          name="keywords"
-          content="Carlos, Henrique, Carlos Henrique, Carlos Henrique Programação, Carlos Henrique ReactJS, ReactJS, NextJS, Portifólio, Portifólio Carlos Henrique, Amambai, MS, Carlos Henrique Machado dos Santos Amambai MS, "
-        />
-        <meta name="robots" content="index, follow" />
-        <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta name="language" content="Portuguese" />
-        <meta name="revisit-after" content="30 days" />
-        <meta name="author" content="Carlos Henrique " />
-      </Head>
-      {children}
+				<meta property="og:type" content="website" />
+				<meta property="og:url" content={defaultMetaInfo.websiteUrl} />
+				<meta property="og:title" content={defaultMetaInfo.name} />
+				<meta property="og:description" content={defaultMetaInfo.description} />
+				<meta property="og:image" content={defaultMetaInfo.logoUrl} />
 
-      <footer>
-        <h1>
-          <a href="#home">Carlos Henrique</a>
-        </h1>
+				<meta property="twitter:card" content="summary_large_image" />
+				<meta property="twitter:url" content={defaultMetaInfo.websiteUrl} />
+				<meta property="twitter:title" content={defaultMetaInfo.name} />
+				<meta property="twitter:description" content={defaultMetaInfo.description} />
+				<meta property="twitter:image" content={defaultMetaInfo.logoUrl} />
+				<meta name="keywords" content={defaultMetaInfo.tags} />
 
-        <div className="social-icons">
-          <a href="https://www.linkedin.com/in/henriqueok20/" target="_blank">
-            <AiFillLinkedin className="social-icon" />
-          </a>
-          <a href="https://www.github.com/henriqueok20" target="_blank">
-            <AiFillGithub className="social-icon" />
-          </a>
-          <a href="/contact" target="_blank">
-            <AiFillMail className="social-icon" />
-          </a>
-        </div>
-      </footer>
-    </div>
-  );
+				<meta name="robots" content="index, follow" />
+				<meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
+				<meta name="language" content="Portuguese" />
+				<meta name="revisit-after" content="30 days" />
+				<meta name="author" content="Carlos Henrique " />
+			</Head>
+
+			<main className="content-container">
+				<Header />
+				{children}
+			</main>
+
+			<footer>
+				<span>Made with <span className="heart">&#10084;</span> by Me</span>
+				<span>Built with Next Js</span>
+				<span>Copyright © 2021 - Carlos Henrique</span>
+			</footer>
+		</div>
+	);
 }
 
 export default BaseLayout;

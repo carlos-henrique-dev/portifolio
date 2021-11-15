@@ -1,0 +1,28 @@
+@import "../Variables.scss";
+
+.skills {
+	padding: 50px 0 150px;
+
+	.my-skills {
+		margin-left: 30px;
+
+		.skill-items {
+			margin-left: 60px;
+			list-style: none;
+			display: grid;
+			grid-gap: 10px;
+			grid-template-columns: repeat(4, 1fr);
+			padding: 10px 0 30px;
+
+			li {
+				color: $secundary;
+				display: flex;
+				align-items: center;
+				margin: 10px;
+				span {
+					margin-left: 5px;
+				}
+			}
+		}
+	}
+}

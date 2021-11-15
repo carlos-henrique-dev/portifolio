@@ -1,131 +1,126 @@
+@import "./Variables.scss";
+
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 50px 50px 0;
-  width: 100%;
-  overflow: hidden;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 35px 0 35px 40px;
 
-  .brand {
-    text-decoration: none;
-    font-weight: 700;
-    display: flex;
-    color: #023e8a;
+	.logo {
+		width: 60%;
+		text-decoration: none;
+		color: $secundary;
 
-    .title {
-      font-size: 3rem;
-    }
-    .tick {
-      margin-top: 10px;
-      font-size: 3rem;
-      -webkit-animation: 1s blink step-end infinite;
-      -moz-animation: 1s blink step-end infinite;
-      -ms-animation: 1s blink step-end infinite;
-      -o-animation: 1s blink step-end infinite;
-      animation: 1s blink step-end infinite;
-    }
-  }
+		span {
+			display: block;
+		}
 
-  nav {
-    list-style: none;
+		.first-name {
+			font-weight: bold;
+			font-size: 36px;
+			transition: all 0.2s ease-in-out;
+		}
 
-    li {
-      display: inline-block;
-      a {
-        display: block;
-        padding: 0px 20px;
-        font-weight: 900;
-        color: #c0c0c0;
-        font-size: 1.5rem;
-        font-weight: normal;
-        text-decoration: none;
-        transition: transform 0.2s;
-      }
+		.last-name {
+			font-weight: light;
+			font-size: 28px;
+			margin-top: -10px;
+			transition: all 0.2s ease-in-out;
+		}
 
-      a:hover {
-        color: #023e8a;
-        -ms-transform: scale(1.2);
-        -webkit-transform: scale(1.2);
-        transform: scale(1.2);
-      }
-    }
-  }
-}
+		&:hover {
+			.first-name,
+			.last-name {
+				color: $primary;
+			}
+		}
+	}
 
-@media (max-width: 900px) {
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 25px 15px 0;
-    width: 100%;
-    overflow: hidden;
+	.navbar {
+		display: flex;
+		width: 100%;
 
-    .brand {
-      text-decoration: none;
-      font-weight: 700;
-      display: flex;
-      color: #023e8a;
+		.navlinks {
+			display: flex;
+			flex-direction: row;
+			width: 100%;
+			justify-content: space-between;
+			align-items: center;
+			list-style: none;
 
-      .title {
-        font-size: 2rem;
-      }
-    }
+			.link {
+				margin: 0 10px;
 
-    nav {
-      // TODO mudar para menu
-      visibility: hidden;
-    }
-  }
-}
+				a {
+					text-decoration: none;
+					color: $secundary;
+					font-size: 25px;
+					font-weight: normal;
+					transition: all 0.2s ease-in-out;
+				}
 
-// daqui pra baixo cuida do tick que fica piscando
-@keyframes blink {
-  from,
-  to {
-    color: transparent;
-  }
-  50% {
-    color: #023e8a;
-  }
-}
+				.locale-container {
+					position: relative;
 
-@-moz-keyframes blink {
-  from,
-  to {
-    color: transparent;
-  }
-  50% {
-    color: #023e8a;
-  }
-}
+					.current-locale,
+					.locale-options {
+						img {
+							width: 25px;
+							height: 20px;
+							object-fit: cover;
+						}
 
-@-webkit-keyframes blink {
-  from,
-  to {
-    color: transparent;
-  }
-  50% {
-    color: #023e8a;
-  }
-}
+						span {
+							color: $secundary;
+							margin-left: 5px;
+						}
+					}
 
-@-ms-keyframes blink {
-  from,
-  to {
-    color: transparent;
-  }
-  50% {
-    color: #023e8a;
-  }
-}
+					.current-locale {
+						display: flex;
+						flex-direction: row;
+						justify-content: center;
+						align-items: center;
+						cursor: pointer;
+					}
 
-@-o-keyframes blink {
-  from,
-  to {
-    color: transparent;
-  }
-  50% {
-    color: #023e8a;
-  }
+					.locale-options {
+						position: absolute;
+						background-color: $background-light;
+						box-sizing: border-box;
+						right: 0;
+						margin-top: 10px;
+						display: none;
+
+						&.visible {
+							display: inherit;
+						}
+
+						.option {
+							display: flex;
+							flex-direction: row;
+							cursor: pointer;
+							transition: all 0.2s ease-in-out;
+							padding: 5px 10px;
+
+							span {
+								width: 40px;
+							}
+
+							&:hover {
+								background-color: $primary;
+							}
+						}
+					}
+				}
+
+				&:hover {
+					a {
+						color: $primary;
+					}
+				}
+			}
+		}
+	}
 }

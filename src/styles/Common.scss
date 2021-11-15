@@ -1,0 +1,21 @@
+@import "./Variables.scss";
+
+.home-section-title {
+	margin-bottom: 20px;
+	color: $primary;
+	font-weight: bold;
+	font-size: 38px;
+}
+
+.section-sub-title {
+		font-size: 22px;
+		margin-bottom: 10px;
+		color: $primary;
+}
+
+.home-section-description {
+	margin: 10px 0 20px;
+	color: $secundary;
+	font-size: 18px;
+	line-height: 30px;
+}

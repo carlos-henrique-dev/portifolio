@@ -1,0 +1,167 @@
+@import "../Variables.scss";
+
+.home {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	height: calc(100vh - 130px);
+	position: relative;
+
+	.col-left {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		width: 100%;
+
+		h1 {
+			white-space: pre-line;
+			color: $secundary;
+			font-size: 54px;
+			font-weight: bold;
+		}
+		h2 {
+			color: $secundary-dark;
+			font-size: 34px;
+			font-weight: normal;
+		}
+
+		.contact-btn {
+			position: relative;
+			z-index: 1;
+			margin-top: 30px;
+			margin-left: 5px;
+			transition: all 0.3s ease-in-out;
+
+			a {
+				padding: 5px 30px;
+				text-decoration: none;
+				background-color: $primary-dark;
+				color: $secundary;
+				font-size: 30px;
+				font-weight: bold;
+				height: 50px;
+			}
+
+			&::before {
+				content: "";
+				position: absolute;
+				width: 100%;
+				height: 45px;
+				background-color: $primary;
+				left: -5px;
+				top: -10px;
+				z-index: -1;
+			}
+
+			&:active {
+				transform: scale(0.97);
+			}
+		}
+	}
+
+	.col-right {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		width: 100%;
+
+		img {
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+
+	.scroll-animation {
+		position: absolute;
+		bottom: 5%;
+
+		.scroll-indicator {
+			width: 14px;
+			margin: 0 auto;
+			position: relative;
+			opacity: 0.5;
+
+			&::before,
+			&::after {
+				content: "";
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			&::before {
+				width: 12px;
+				height: 12px;
+				border-radius: 12px;
+				border: 1px solid #fff;
+				animation: dot 3s infinite ease-in-out;
+			}
+			&::after {
+				width: 7px;
+				height: 7px;
+				border-right: 1px solid #fff;
+				border-bottom: 1px solid #fff;
+				transform: rotate(45deg);
+				animation: arrow 3s infinite ease-in-out;
+				animation-delay: 0.75s;
+				opacity: 0.25;
+			}
+			& > div {
+				display: block;
+				&::before,
+				&::after {
+					content: "";
+					display: block;
+					margin: 5px auto;
+					border-radius: 10px;
+					border: 1px solid #fff;
+					animation: dot 3s infinite ease-in-out;
+				}
+				&::before {
+					width: 8px;
+					height: 8px;
+					animation-delay: 0.25s;
+				}
+				&::after {
+					width: 6px;
+					height: 6px;
+					animation-delay: 0.5s;
+				}
+			}
+		}
+
+		@keyframes dot {
+			0% {
+				transform: scale(0.75);
+				opacity: 0.25;
+			}
+			25% {
+				transform: scale(1);
+				opacity: 1;
+			}
+			100% {
+				transform: scale(0.75);
+				opacity: 0.25;
+			}
+		}
+
+		@keyframes arrow {
+			0% {
+				transform: scale(0.75) rotate(45deg);
+				opacity: 0.25;
+			}
+			25% {
+				transform: scale(1) rotate(45deg);
+				opacity: 1;
+			}
+			100% {
+				transform: scale(0.75) rotate(45deg);
+				opacity: 0.25;
+			}
+		}
+	}
+}
