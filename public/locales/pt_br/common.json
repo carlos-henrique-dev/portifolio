@@ -19,5 +19,6 @@
 	"message": "Mensagem",
 	"send": "Enviar mensagem",
 	"submitting": "Enviado mensagem",
-	"submitted": "Obrigado!\n\nSua mensagem foi enviada com sucesso\n responderei assim que possível!"
+	"submitted": "Obrigado!\n\nSua mensagem foi enviada com sucesso\n responderei assim que possível!",
+	"under-construction": "Página em desenvolvimento"
 }

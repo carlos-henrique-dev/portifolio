@@ -3,10 +3,10 @@ import Head from "next/head";
 import Header from "./Header";
 
 const defaultMetaInfo = {
-	description: 'Welcome to my portifólio.Here you can see my latest projects and get in touch with me',
+	description: 'Welcome to my portifólio.\nHere you can see my latest projects and get in touch with me',
 	websiteUrl: 'https://carloshenrique.dev/',
 	name: 'Carlos Henrique DEV',
-	logoUrl: 'https://drive.google.com/file/d/1oQw0KUtcfQDHnP70c7S7vu1hks1C_VPo/view?usp=sharing',
+	logoUrl: 'https://drive.google.com/file/d/13aTRUoC_drU8H_KnBsGdg9tOxfpmQLV_/view?usp=sharing',
 	tags: 'Carlos, Henrique, Carlos Henrique, Carlos Henrique Programação, Carlos Henrique ReactJS, ReactJS, NextJS, Portifólio, Portifólio Carlos Henrique, Amambai, MS, Carlos Henrique Machado dos Santos Amambai MS'
 }
 

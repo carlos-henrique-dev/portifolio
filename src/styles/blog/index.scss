@@ -1,0 +1,13 @@
+@import "../Variables.scss";
+
+.blog {
+	height: 50vh;
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+
+	h1 {
+		color: $secundary;
+	}
+}
