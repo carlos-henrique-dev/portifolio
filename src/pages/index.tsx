@@ -182,6 +182,7 @@ const HomePage = () => {
 
 			<section id="projects" className="projects">
 				<h3 className="home-section-title">{t('header:projects')}</h3>
+				<p className="home-section-description">{t('projects-description')}</p>
 				<div className="my-projects">
 					<div className="tabs">
 						<span onClick={() => filterProjects('all', 0)} className={`tab ${activeTab === 0 ? 'active' : ''}`} >{t('projects-all')}</span>
@@ -195,10 +196,12 @@ const HomePage = () => {
 			</section>
 
 			<section id="contact" className="contact">
-				<div className="contact-image-wrapper">
-				<Image src="/images/contact.svg" alt="Contact Me" width="800" height="800" />
-				</div>
 				<h3 className="home-section-title">{t('header:contact')}</h3>
+				<p className="home-section-description">{t('contact-description')}</p>
+
+				<div className="contact-image-wrapper">
+					<Image src="/images/contact.svg" alt="Contact Me" width="800" height="800" />
+				</div>
 				<div className="form-wrapper">
 					{
 						!submitted ?

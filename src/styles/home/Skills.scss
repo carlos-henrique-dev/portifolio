@@ -25,8 +25,33 @@
 				}
 
 				&:hover {
-				color: $primary;
+					color: $primary;
 				}
+			}
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.skills {
+		padding: 50px 20px 0;
+
+		.my-skills {
+			.skill-items {
+				grid-template-columns: repeat(3, 1fr);
+			}
+		}
+	}
+}
+
+@media (max-width: 550px) {
+	.skills {
+		.my-skills {
+		margin-left: 10px;
+
+			.skill-items {
+				margin-left: 15px;
+				grid-template-columns: repeat(2, 1fr);
 			}
 		}
 	}

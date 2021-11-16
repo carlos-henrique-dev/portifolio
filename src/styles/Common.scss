@@ -8,9 +8,9 @@
 }
 
 .section-sub-title {
-		font-size: 22px;
-		margin-bottom: 10px;
-		color: $primary;
+	font-size: 22px;
+	margin-bottom: 10px;
+	color: $primary;
 }
 
 .home-section-description {
@@ -18,4 +18,13 @@
 	color: $secundary;
 	font-size: 18px;
 	line-height: 30px;
+}
+
+@media (max-width: 768px) {
+.home-section-title {
+	font-size: 30px;
+}
+	.section-sub-title {
+		font-size: 18px;
+	}
 }

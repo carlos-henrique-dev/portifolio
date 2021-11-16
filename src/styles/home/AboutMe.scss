@@ -23,12 +23,16 @@
 	.follow-me {
 		ul {
 			list-style: none;
-			display: flex;
-			flex-direction: row;
+			display: grid;
+			grid-template-columns: repeat(6, 150px);
+			gap: 5px;
+			justify-content: flex-start;
+			align-items: flex-start;
+			justify-items: flex-start;
+			align-content: flex-start;
 
 			li {
 				margin: 5px 10px;
-				
 				a {
 					display: flex;
 					flex-direction: row;
@@ -37,18 +41,48 @@
 					text-decoration: none;
 					color: $secundary;
 					font-size: 20px;
-					transition: all .3s ease-in-out;
+					transition: all 0.3s ease-in-out;
 				}
 
 				span {
 					margin-left: 5px;
 				}
 
-				&:hover, &:active {
+				&:hover,
+				&:active {
 					a {
 						color: $primary;
 					}
 				}
+			}
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.about-me {
+		padding: 0 20px;
+
+		.content {
+		margin-top: 0;
+		}
+
+		.follow-me {
+			ul {
+				grid-template-columns: repeat(4, 150px);
+
+
+			}
+		}
+	}
+}
+
+@media (max-width: 550px) {
+	.about-me {
+
+		.follow-me {
+			ul {
+				grid-template-columns: repeat(2, 150px);
 			}
 		}
 	}
