@@ -12,11 +12,11 @@ const Projects: (Project)[] = [
 		img: '/images/aca_screenshot.png',
 		projectUrl: 'https://www.aca-amambai.com/',
 		type: 'real',
-		route: '/website-aca-amambai'
+		route: '/projects/website-aca-amambai'
 	},
 	{
 		name: 'Mr Robot',
-		img: '/images/mr_robot_screenshot.png',
+		img: '/projects/images/mr_robot_screenshot.png',
 		projectUrl: 'https://mr-robot-spa.vercel.app/',
 		type: 'study',
 		route: 'project-mr-robot'
@@ -26,7 +26,7 @@ const Projects: (Project)[] = [
 		img: '/images/dot_movies_screenshot.png',
 		projectUrl: 'https://wonderful-meitner-b75607.netlify.app/',
 		type: 'study',
-		route: 'dot-movies'
+		route: '/projects/dot-movies'
 	},
 ]
 

@@ -1,0 +1,10 @@
+{
+	"projectName": "Website ACA",
+	"description": "Aliquip minim anim qui nostrud cillum laborum cillum sit ea qui esse.",
+	"technologies": [
+		{
+			"name": "React",
+			"category": "frontend"
+		}
+	]
+}
