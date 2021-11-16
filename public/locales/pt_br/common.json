@@ -1,5 +1,23 @@
 {
-	"home-hello": "Olá!\nMe chamo Carlos Henrique",
-	"home-description": "Sou desenvolvedor full stack",
-	"contact-me": "Entre em contato"
+	"home-hello": "Opa, Tudo bom?\nEu sou o Carlos Henrique",
+	"home-description": "Desenvolvedor web fullstack",
+	"contact-me": "Enviar uma mensagem",
+	"about-content": "Sou desenvolvedor há mais de 2 anos, atuando com tecnologias como React, Vue, Graphql and várias outras. Sempre desenvolvendo a melhor solução para os clientes.\n\nAtualmente atuo principalmente com Vue e GraphQL e estudo PHP.\n\nMais abaixo você pode conferir mais tecnologias que uso ou já usei, bem como os projetos em que atuei.\n\nTambém estou nas redes sociais abaixo. Só me seguir e mandar um olá :)",
+	"follow-me": "Siga-me",
+	"skills-description": "Aqui estão algumas das tecnologias que uso ou já utilizei em projetos.",
+	"projects-description": "Abaixo você pode ver alguns dos projetos que já desenvolvi. Alguns são projetos reais e outros de estudo.\nVocê pode filtrar eles e, clicando no card, poderá ver mais detalhes sobre o projeto.",
+	"contact-description": "Está pensando em criar um espaço online para sua empresa? Me mande uma mensagem e vamos conversar melhor.",
+	"frontend": "Frontend",
+	"backend": "Backend",
+	"others": "Outros",
+	"projects-all": "Todos",
+	"projects-real": "Projetos reais",
+	"projects-study": "Projetos de estudo",
+	"more-details": "Mais detalhes",
+	"name": "Nome",
+	"email": "E-mail",
+	"message": "Mensagem",
+	"send": "Enviar mensagem",
+	"submitting": "Enviado mensagem",
+	"submitted": "Obrigado!\n\nSua mensagem foi enviada com sucesso\n responderei assim que possível!"
 }
