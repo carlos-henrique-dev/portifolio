@@ -11,6 +11,8 @@ export default async function (req, res) {
 
 		const fileContent = fs.readFileSync(filePath, { encoding: 'utf-8' })
 
+		console.log('file content', fileContent)
+
 		res.status(200).json({ status: 'OK', data: fileContent });
 	} catch (error) {
 		res.status(500).json({ status: 'NOT OK', data: null });
