@@ -54,10 +54,19 @@
 				left: -5px;
 				top: -10px;
 				z-index: -1;
+				transition: all 0.2s ease-in-out;
 			}
 
 			&:active {
 				transform: scale(0.97);
+			}
+
+			&:hover,
+			&:active {
+				&::before {
+					left: -2px;
+					top: -6px;
+				}
 			}
 		}
 	}

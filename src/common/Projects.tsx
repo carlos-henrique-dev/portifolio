@@ -9,17 +9,18 @@ export type Project = {
 const Projects: (Project)[] = [
 	{
 		name: 'Website ACA',
-		img: '/images/aca_screenshot.png',
+		img: 'https://firebasestorage.googleapis.com/v0/b/portifolio-332313.appspot.com/o/aca_screenshot.png?alt=media&token=a60a3916-573e-4083-996b-8f680208c786',
+		// img: '/images/aca_screenshot.png',
 		projectUrl: 'https://www.aca-amambai.com/',
 		type: 'real',
 		route: '/projects/website-aca-amambai'
 	},
 	{
 		name: 'Mr Robot',
-		img: '/projects/images/mr_robot_screenshot.png',
+		img: '/images/mr_robot_screenshot.png',
 		projectUrl: 'https://mr-robot-spa.vercel.app/',
 		type: 'study',
-		route: 'project-mr-robot'
+		route: '/projects/project-mr-robot'
 	},
 	{
 		name: 'DOT Movies',
