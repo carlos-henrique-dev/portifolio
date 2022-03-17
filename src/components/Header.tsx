@@ -39,7 +39,7 @@ const Header = () => {
 						<Link href={getAnchor("#projects")}>{t('projects')}</Link>
 					</li>
 					<li className="link" onClick={() => setShowMenu(false)}>
-						<Link href={getAnchor("/blog")}>{t('blog')}</Link>
+						<Link href={getAnchor("blog")}>{t('blog')}</Link>
 					</li>
 					<li className="link" onClick={() => setShowMenu(false)}>
 						<Link href={getAnchor("#contact")}>{t('contact')}</Link>

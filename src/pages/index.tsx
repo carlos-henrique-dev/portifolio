@@ -1,17 +1,18 @@
 import React, { useState } from "react";
-import BaseLayout from "../components/BaseLayout";
-
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Link from "next/link";
+import Image from 'next/image'
+
 import { useTranslation } from "next-i18next";
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+
+import BaseLayout from "../components/BaseLayout";
+import Card from "../components/Card";
+
 
 import { SocialLinks, SocialLink } from '../common/SocialLinks'
 import { Skills, Skill } from '../common/Skills'
 import { Projects, Project } from '../common/Projects'
 
-import { IoIosArrowBack, IoIosArrowForward, IoMdRefresh, IoMdSearch } from 'react-icons/io'
-
-import Image from 'next/image'
 
 
 const HomePage = () => {
@@ -27,44 +28,6 @@ const HomePage = () => {
 
 	const handleSubmit = (e) => {
 		e.preventDefault()
-
-		// TODO adicionar uma validação melhor no formulário
-		if (email === '' || name === '' || message === '') {
-			return
-		}
-
-		setSubmitting(true)
-
-		let data = {
-			name: name.trim(),
-			email: email.trim(),
-			message: message.trim()
-		}
-
-		fetch('/api/contact', {
-			method: 'POST',
-			headers: {
-				'Accept': 'application/json, text/plain, */*',
-				'Content-Type': 'application/json'
-			},
-			body: JSON.stringify(data)
-		}).then((res) => {
-
-			console.log('Response received')
-			if (res.status === 200) {
-
-				console.log('Response succeeded!')
-				setSubmitted(true)
-				setSubmitting(false)
-				setName('')
-				setEmail('')
-				setMessage('')
-				const doc: any = document.getElementById("contact-form")
-				if (doc !== null) doc.reset();
-			}
-		}).catch(err => {
-			console.log('error', err)
-		})
 	}
 
 	const filterProjects = (filter: string, tabIndex: number) => {
@@ -91,36 +54,7 @@ const HomePage = () => {
 			projectsList = Projects.filter((proj: Project) => proj.type === projectFilter)
 		}
 
-		return projectsList.map((project: Project) => (
-			<div className="browser" key={project.name}>
-				<div className="wrapper">
-					<div className="title-bar">
-						<div className="title-btn red" />
-						<div className="title-btn yellow" />
-						<div className="title-btn green" />
-					</div>
-					<div className="action-bar">
-						<div className="action-btn">< IoIosArrowBack /></div>
-						<div className="action-btn">< IoIosArrowForward /></div>
-						<div className="action-btn">< IoMdRefresh /></div>
-						<div className="search-bar"><span>{project.projectUrl}</span></div>
-						<div className="action-btn">< IoMdSearch /></div>
-					</div>
-					<div className="screenshot">
-						<Image src={project.img} alt={project.name} width="400" height="300" />
-					</div>
-
-					<div className="overlay">
-						<div className="content">
-							<span className="project-name">{project.name}</span>
-							<Link href={project.route}>
-								<span className="open-details">{t('more-details')}</span>
-							</Link>
-						</div>
-					</div>
-				</div>
-			</div>
-		))
+		return projectsList.map((project: Project) => <Card data={project} t={t} key={project.name} />)
 	}
 
 	return (
