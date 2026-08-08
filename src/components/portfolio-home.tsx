@@ -13,9 +13,9 @@ const copy = {
     available: 'Disponível para projetos selecionados',
     hero: (
       <>
-        Transformo complexidade
+        Experiências simples.
         <br />
-        em produtos <em>simples.</em>
+        Sistemas <em>sólidos.</em>
       </>
     ),
     intro: 'Sou Carlos Henrique, engenheiro de software full stack. Uno visão de produto e engenharia para criar experiências claras — do primeiro componente à infraestrutura.',
@@ -23,7 +23,7 @@ const copy = {
     note: 'Produto próprio · UX, engenharia e arquitetura',
     case: 'Case study · 2026',
     project: 'Organizador Financeiro',
-    projectDesc: 'Uma aplicação local-first para organizar o presente e planejar o futuro financeiro familiar — online ou offline.',
+    projectDesc: 'Uma aplicação conectada para organizar o presente e planejar o futuro financeiro familiar, com dados consistentes entre dispositivos.',
     explore: 'Ver case completo',
     challenge: 'O desafio',
     challengeTitle: 'Finanças não são só números. São decisões.',
@@ -32,7 +32,7 @@ const copy = {
       'Desenhei e desenvolvi um produto que conecta esses domínios, evita duplicidades contábeis e transforma movimentações em projeções e cenários úteis.',
     ],
     features: [
-      ['Local-first', 'IndexedDB como fonte local e sincronização seletiva em segundo plano.'],
+      ['Remote-first com cache local', 'Banco remoto como fonte de verdade e IndexedDB para leituras rápidas e uma interface responsiva.'],
       ['Domínio complexo, interface simples', 'Regras financeiras isoladas, testáveis e traduzidas em decisões claras.'],
       ['Web, PWA e Android', 'Uma base React distribuída no navegador e via Capacitor.'],
       ['Backend serverless', 'Lambda, DynamoDB, Cognito e infraestrutura como código na AWS.'],
@@ -84,9 +84,9 @@ const copy = {
     available: 'Available for selected projects',
     hero: (
       <>
-        Turning complexity
+        Simple experiences.
         <br />
-        into <em>simple products.</em>
+        Solid <em>systems.</em>
       </>
     ),
     intro: "I'm Carlos Henrique, a full-stack software engineer. I combine product thinking and engineering to create clear experiences — from the first component to the infrastructure.",
@@ -94,7 +94,7 @@ const copy = {
     note: 'Independent product · UX, engineering & architecture',
     case: 'Case study · 2026',
     project: 'Financial Organizer',
-    projectDesc: "A local-first application to understand today's finances and plan a family's financial future — online or offline.",
+    projectDesc: "A connected application to understand today's finances and plan a family's financial future, with consistent data across devices.",
     explore: 'View full case study',
     challenge: 'The challenge',
     challengeTitle: "Finance isn't just numbers. It's decisions.",
@@ -103,7 +103,7 @@ const copy = {
       'I designed and built a product that connects these domains, prevents duplicate accounting, and turns transactions into useful projections and scenarios.',
     ],
     features: [
-      ['Local-first', 'IndexedDB as the local source of truth with selective background sync.'],
+      ['Remote-first with local cache', 'A remote source of truth with IndexedDB for fast reads and a responsive interface.'],
       ['Complex domain, simple interface', 'Isolated, testable financial rules translated into clear decisions.'],
       ['Web, PWA & Android', 'One React codebase shipped to the browser and through Capacitor.'],
       ['Serverless backend', 'Lambda, DynamoDB, Cognito and infrastructure as code on AWS.'],

@@ -10,11 +10,11 @@ const sections = {
     theme: 'Alternar tema',
     eyebrow: 'Case de produto · 2026',
     title: 'Organizador Financeiro',
-    lead: 'Uma experiência local-first que transforma a complexidade da vida financeira familiar em contexto para decisões melhores.',
+    lead: 'Uma experiência conectada que transforma a complexidade da vida financeira familiar em contexto para decisões melhores.',
     meta: [
       ['Papel', 'Produto, UX e engenharia'],
       ['Plataformas', 'Web, PWA e Android'],
-      ['Arquitetura', 'Local-first + AWS serverless'],
+      ['Arquitetura', 'Remote-first + cache local'],
     ],
     problemTitle: 'O problema não era registrar gastos.',
     problemText: 'Era entender como cada decisão afeta o todo. Contas, cartões, dívidas, metas e investimentos costumam ser tratados como saldos isolados — gerando duplicidades e escondendo compromissos futuros.',
@@ -25,12 +25,12 @@ const sections = {
     galleryNote: 'Adicione screenshots em public/projects/financial-organizer usando os nomes indicados.',
     pillars: 'Decisões de engenharia',
     items: [
-      ['Offline por padrão', 'IndexedDB e Dexie mantêm as operações rápidas e disponíveis sem conexão.'],
-      ['Sincronização segura', 'Coleções hidratadas sob demanda, lotes pequenos, retry exponencial e prioridade para alterações locais.'],
+      ['Banco remoto como prioridade', 'A base remota é a fonte de verdade e centraliza a persistência dos dados financeiros.'],
+      ['Cache local inteligente', 'IndexedDB e Dexie reduzem latência, evitam leituras repetidas e tornam a navegação mais responsiva.'],
       ['Regras isoladas', 'Funções puras concentram projeções, recorrências, cartões, investimentos e saúde financeira.'],
       ['Backend serverless', 'API Gateway, Lambda, DynamoDB, Cognito, CloudWatch e infraestrutura com SAM.'],
       ['Um código, três experiências', 'React e TypeScript na web, como PWA e no Android via Capacitor.'],
-      ['Privacidade e resiliência', 'Dados isolados por usuário; falhas de push ou nuvem nunca bloqueiam gravações locais.'],
+      ['Privacidade e consistência', 'Dados isolados por usuário e uma fonte de verdade remota mantêm as informações consistentes entre dispositivos.'],
     ],
     flow: 'Como o sistema se conecta',
     resultTitle: 'O resultado',
@@ -44,11 +44,11 @@ const sections = {
     theme: 'Toggle theme',
     eyebrow: 'Product case study · 2026',
     title: 'Financial Organizer',
-    lead: 'A local-first experience that turns the complexity of family finances into context for better decisions.',
+    lead: 'A connected experience that turns the complexity of family finances into context for better decisions.',
     meta: [
       ['Role', 'Product, UX & engineering'],
       ['Platforms', 'Web, PWA & Android'],
-      ['Architecture', 'Local-first + serverless AWS'],
+      ['Architecture', 'Remote-first + local cache'],
     ],
     problemTitle: "The problem wasn't tracking expenses.",
     problemText: 'It was understanding how each decision affects the whole. Accounts, cards, debt, goals, and investments are often treated as isolated balances — creating duplicates and hiding future commitments.',
@@ -58,12 +58,12 @@ const sections = {
     galleryNote: 'Add screenshots to public/projects/financial-organizer using the indicated filenames.',
     pillars: 'Engineering decisions',
     items: [
-      ['Offline by default', 'IndexedDB and Dexie keep operations fast and available without a connection.'],
-      ['Safe synchronization', 'On-demand hydration, small batches, exponential retry, and priority for local changes.'],
+      ['Remote database first', 'The remote database is the source of truth and centralizes financial data persistence.'],
+      ['Smart local cache', 'IndexedDB and Dexie reduce latency, prevent repeated reads, and keep navigation responsive.'],
       ['Isolated rules', 'Pure functions model projections, recurrence, cards, investments, and financial health.'],
       ['Serverless backend', 'API Gateway, Lambda, DynamoDB, Cognito, CloudWatch, and SAM infrastructure.'],
       ['One codebase, three experiences', 'React and TypeScript on the web, as a PWA, and on Android through Capacitor.'],
-      ['Privacy & resilience', 'User data stays isolated; cloud or push failures never block local writes.'],
+      ['Privacy & consistency', 'User data stays isolated while a remote source of truth keeps information consistent across devices.'],
     ],
     flow: 'How the system connects',
     resultTitle: 'The outcome',
@@ -99,7 +99,7 @@ export function ProjectCase({ locale }: { locale: 'pt' | 'en' }) {
         <h1>{c.title}</h1>
         <div>
           <p>{c.lead}</p>
-          <span>React · TypeScript · AWS · Local-first</span>
+          <span>React · TypeScript · AWS · Remote-first</span>
         </div>
       </header>
       <section className="project-cover shell">
@@ -168,11 +168,11 @@ export function ProjectCase({ locale }: { locale: 'pt' | 'en' }) {
         <div className="arch-flow">
           <b>React + TypeScript</b>
           <i>→</i>
-          <b>Dexie / IndexedDB</b>
+          <b>IndexedDB cache</b>
           <i>⇄</i>
           <b>API Gateway</b>
           <i>→</i>
-          <b>Lambda + DynamoDB</b>
+          <b>DynamoDB · source of truth</b>
         </div>
       </section>
       <section className="project-result shell">
